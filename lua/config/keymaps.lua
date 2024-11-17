@@ -24,4 +24,4 @@ end
 
 vim.keymap.set("n", "<leader>ut", OpenUndotree, { desc = "[U]ndo [T]ree" })
 
-vim.keymap.set("n", "<C-g>", vim.cmd.Git, { desc = "Git" })
+vim.keymap.set("n", "<C-g>", "<cmd>Git<CR>5j", { desc = "Git" })
