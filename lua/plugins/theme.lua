@@ -1,17 +1,17 @@
 return {
   {
-    "oxfist/night-owl.nvim",
+    "EdenEast/nightfox.nvim",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000,
     config = function()
-      require("night-owl").setup({
+      require("nightfox").setup({
         bold = true,
         italics = true,
         underline = true,
         undercurl = true,
         transparent_background = true,
       })
-      vim.cmd.colorscheme("night-owl")
+      vim.cmd.colorscheme("nordfox")
     end,
   },
 }
