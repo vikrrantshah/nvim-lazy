@@ -1,5 +1,6 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
+  -- enabled = false,
   cmd = "Neotree",
   keys = {
     {
@@ -14,21 +15,12 @@ return {
     vim.cmd([[Neotree close]])
   end,
   init = function()
-    vim.api.nvim_create_autocmd("BufEnter", {
-      group = vim.api.nvim_create_augroup("Neotree_start_directory", { clear = true }),
-      desc = "Start Neo-tree with directory",
-      once = true,
-      callback = function()
-        if package.loaded["neo-tree"] then
-          return
-        else
-          local stats = vim.uv.fs_stat(vim.fn.argv(0))
-          if stats and stats.type == "directory" then
-            require("neo-tree")
-          end
-        end
-      end,
-    })
+    vim.g.neotree = {
+      auto_close = true,
+      auto_open = false,
+      auto_update = true,
+      update_to_buf_dir = true,
+    }
   end,
   opts = {
     sources = { "filesystem", "buffers", "git_status" },
@@ -37,6 +29,8 @@ return {
       bind_to_cwd = true,
       follow_current_file = { enabled = true },
       use_libuv_file_watcher = true,
+      hide_dotfiles = false,
+      hide_gitignored = true,
     },
     window = {
       mappings = {
@@ -74,6 +68,8 @@ return {
         },
       },
     },
+    hijack_netrw_behavior = "disabled",
+    close_if_last_window = true,
   },
   config = function(_, opts)
     local function on_move(data)
