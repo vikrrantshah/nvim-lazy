@@ -28,6 +28,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.editor.telescope" },
     -- Formatting
     { import = "lazyvim.plugins.extras.formatting.prettier" },
+    -- Debugging
+    { import = "lazyvim.plugins.extras.dap.core" },
+    { import = "lazyvim.plugins.extras.dap.nlua" },
     -- LSP/Language Tools
     { import = "lazyvim.plugins.extras.lang.angular" },
     { import = "lazyvim.plugins.extras.lang.git" },
