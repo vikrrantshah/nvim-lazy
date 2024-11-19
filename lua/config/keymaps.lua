@@ -14,7 +14,10 @@ vim.keymap.set("n", "<leader>bn", vim.cmd.bnext, { desc = "[B]uffer [N]ext" })
 vim.keymap.set("n", "<leader>bp", vim.cmd.bNext, { desc = "[B]uffer [P]revious" })
 
 -- LSP
-vim.keymap.set("n", "<leader>gi", vim.lsp.buf.hover, { desc = "[G]et [I]nfo about element under cursor" })
+vim.keymap.set("n", "<leader>l", vim.lsp.buf.hover, { desc = "LSP" })
+vim.keymap.set("n", "<leader>li", vim.lsp.buf.hover, { desc = "Get Info about element under cursor" })
+vim.keymap.set("n", "<leader>r", "", { desc = "+replace" })
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Name (Rename Symbol)" })
 
 -- Others
 local function OpenUndotree()
