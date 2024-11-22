@@ -30,6 +30,7 @@ vim.api.nvim_create_autocmd("FileType", {
     "startuptime",
     "tsplayground",
     "fugitive",
+    "undotree",
   },
   callback = function(event)
     vim.bo[event.buf].buflisted = false
