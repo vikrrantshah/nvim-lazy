@@ -5,4 +5,6 @@ return {
   { "mbbill/undotree" },
   -- Center buffer on large screen
   { "shortcuts/no-neck-pain.nvim" },
+  -- To practice vim motions
+  { "ThePrimeagen/vim-be-good" },
 }
