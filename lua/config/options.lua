@@ -1,0 +1,27 @@
+vim.g.lazyvim_prettier_needs_config = false
+vim.g.lazyvim_php_lsp = "intelephense"
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+vim.g.editorconfig = true
+vim.opt.number = true
+vim.opt.mouse = "a"
+vim.opt.showmode = false
+vim.opt.breakindent = true
+vim.opt.undofile = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.signcolumn = "yes"
+vim.opt.updatetime = 250
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.inccommand = "split"
+vim.opt.cursorline = true
+vim.opt.scrolloff = 99
+vim.opt.hlsearch = true
+vim.opt.relativenumber = true
+vim.opt.tabstop = 4
+vim.opt.expandtab = true
+vim.opt.fillchars = { fold = " " }
+vim.opt.foldmethod = "indent"
+vim.opt.foldenable = false
+vim.opt.foldlevel = 99
