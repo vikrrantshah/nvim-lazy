@@ -1,6 +1,7 @@
 return {
   { "echasnovski/mini.pairs", opts = { skip_ts = { "string", "function" } } },
   { "folke/which-key.nvim", opts = { preset = "classic" } },
+  { "neovim/nvim-lspconfig", opts = { inlay_hints = { enable = false } } },
   {
     "snacks.nvim",
     opts = {
